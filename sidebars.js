@@ -15,6 +15,7 @@
 const sidebars = {
   docs: [
     'index',
+    'ecosystem',
     'getting-started',
     {
       type: 'category',

@@ -19,8 +19,8 @@
   },
   "sidebar": "docs",
   "previous": {
-    "title": "Home",
-    "permalink": "/docs/"
+    "title": "Ecosystem Architecture",
+    "permalink": "/docs/ecosystem"
   },
   "next": {
     "title": "Multi-Agent System",
