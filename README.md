@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/arcprotocol/arcprotocol)](https://github.com/arcprotocol/arcprotocol/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/arc-sdk.svg)](https://pypi.org/project/arc-sdk/)
 
-**ARC (Agent Remote Communication)** is a stateless RPC protocol designed for multi-agent systems. It provides a unified communication standard that enables deploying multiple specialized agents behind a single endpoint with intelligent routing capabilities. The protocol implements quantum-safe hybrid TLS encryption (X25519 + Kyber-768) for future-proof security, single-endpoint multi-agent routing via `targetAgent` field for simplified infrastructure, and comprehensive workflow tracing through `traceId` propagation for observability across distributed agent architectures. Built on HTTPS with JSON serialization, ARC supports both asynchronous task-based operations and real-time chat interactions with Server-Sent Events streaming.
+**ARC (Agent Remote Communication)** is a stateless RPC protocol for multi-agent systems. Deploys multiple agents on a single endpoint with protocol-level routing via `targetAgent`. Implements quantum-safe hybrid TLS (X25519 + Kyber-768), workflow tracing via `traceId` propagation, and supports asynchronous task operations and real-time chat with Server-Sent Events. 
 
 > [!IMPORTANT]
 > **Quantum-Safe Security**: ARC Protocol implements hybrid TLS using X25519 + Kyber-768 (NIST-standardized ML-KEM, FIPS 203) for protection against both current and future quantum computing attacks. See [Hybrid TLS Implementation](#hybrid-tls-implementation) below.
@@ -13,10 +13,10 @@
 ## Key Features
 
 - **Single-Endpoint Multi-Agent Routing**: Deploy multiple specialized agents behind one endpoint with protocol-level routing via `targetAgent` field
-- **Quantum-Safe Hybrid TLS**: Post-quantum cryptography using X25519 + Kyber-768 (FIPS 203 ML-KEM) for protection against quantum computing attacks
 - **Workflow Tracing**: End-to-end traceability across distributed agent architectures via `traceId` propagation, designed for integration with observability platforms
 - **Intelligent Agent Selection**: Automatic agent ranking and routing through ARC Compass, using semantic analysis and capability matching to select optimal agents for each request
 - **Agent Discovery and Registry**: Centralized agent management through ARC Ledger, maintaining agent cards, capabilities, endpoints, and metadata for dynamic service discovery
+- **Quantum-Safe Hybrid TLS**: Post-quantum cryptography using X25519 + Kyber-768 (FIPS 203 ML-KEM) for protection against quantum computing attacks
 - **Multiple Communication Patterns**: Synchronous request/response for immediate results, Server-Sent Events (SSE) for real-time streaming, and asynchronous push notifications for long-running operations
 
 ## Hybrid TLS Implementation
