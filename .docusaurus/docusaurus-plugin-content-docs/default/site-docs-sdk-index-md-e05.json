@@ -1,0 +1,15 @@
+{
+  "id": "sdk/index",
+  "title": "ARC SDK",
+  "description": "Official SDK implementations for the ARC Protocol.",
+  "source": "@site/docs/sdk/index.md",
+  "sourceDirName": "sdk",
+  "slug": "/sdk/",
+  "permalink": "/docs/sdk/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

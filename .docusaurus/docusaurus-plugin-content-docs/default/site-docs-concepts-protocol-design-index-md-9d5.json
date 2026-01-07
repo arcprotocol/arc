@@ -1,0 +1,24 @@
+{
+  "id": "concepts/protocol-design/index",
+  "title": "Protocol Design",
+  "description": "ARC Protocol design principles and rationale.",
+  "source": "@site/docs/concepts/protocol-design/index.md",
+  "sourceDirName": "concepts/protocol-design",
+  "slug": "/concepts/protocol-design/",
+  "permalink": "/docs/concepts/protocol-design/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/protocol-design/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Dynamic Prompts",
+    "permalink": "/docs/guides/supervisor-pattern/dynamic-prompts"
+  },
+  "next": {
+    "title": "Stateless RPC",
+    "permalink": "/docs/concepts/protocol-design/stateless-rpc"
+  }
+}

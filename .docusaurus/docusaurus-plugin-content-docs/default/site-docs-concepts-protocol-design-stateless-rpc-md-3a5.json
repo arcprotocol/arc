@@ -1,0 +1,24 @@
+{
+  "id": "concepts/protocol-design/stateless-rpc",
+  "title": "Stateless RPC",
+  "description": "Why ARC uses stateless RPC pattern instead of JSON-RPC 2.0.",
+  "source": "@site/docs/concepts/protocol-design/stateless-rpc.md",
+  "sourceDirName": "concepts/protocol-design",
+  "slug": "/concepts/protocol-design/stateless-rpc",
+  "permalink": "/docs/concepts/protocol-design/stateless-rpc",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/protocol-design/stateless-rpc.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Protocol Design",
+    "permalink": "/docs/concepts/protocol-design/"
+  },
+  "next": {
+    "title": "Single Endpoint",
+    "permalink": "/docs/concepts/protocol-design/single-endpoint"
+  }
+}

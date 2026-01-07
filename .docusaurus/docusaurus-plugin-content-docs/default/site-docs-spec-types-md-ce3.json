@@ -1,0 +1,30 @@
+{
+  "id": "spec/types",
+  "title": "Protocol Types",
+  "description": "Type definitions for ARC Protocol.",
+  "source": "@site/docs/spec/types.md",
+  "sourceDirName": "spec",
+  "slug": "/spec/types",
+  "permalink": "/docs/spec/types",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/spec/types.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "types",
+    "title": "Protocol Types",
+    "sidebar_label": "Types",
+    "sidebar_position": 3
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Methods",
+    "permalink": "/docs/spec/methods"
+  },
+  "next": {
+    "title": "Errors",
+    "permalink": "/docs/spec/errors"
+  }
+}

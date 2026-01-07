@@ -1,0 +1,24 @@
+{
+  "id": "sdk/python/getting-started",
+  "title": "Getting Started",
+  "description": "Quick start guide for the ARC Python SDK.",
+  "source": "@site/docs/sdk/python/getting-started.md",
+  "sourceDirName": "sdk/python",
+  "slug": "/sdk/python/getting-started",
+  "permalink": "/docs/sdk/python/getting-started",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/python/getting-started.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Python SDK",
+    "permalink": "/docs/sdk/python/"
+  },
+  "next": {
+    "title": "Client",
+    "permalink": "/docs/sdk/python/client/"
+  }
+}

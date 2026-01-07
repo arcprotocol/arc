@@ -1,0 +1,24 @@
+{
+  "id": "sdk/python/client/index",
+  "title": "Client",
+  "description": "ARCClient for ARC Protocol communication.",
+  "source": "@site/docs/sdk/python/client/index.md",
+  "sourceDirName": "sdk/python/client",
+  "slug": "/sdk/python/client/",
+  "permalink": "/docs/sdk/python/client/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/python/client/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/sdk/python/getting-started"
+  },
+  "next": {
+    "title": "Task Methods",
+    "permalink": "/docs/sdk/python/client/task-methods"
+  }
+}

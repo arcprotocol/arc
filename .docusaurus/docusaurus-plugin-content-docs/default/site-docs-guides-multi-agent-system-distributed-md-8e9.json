@@ -1,0 +1,24 @@
+{
+  "id": "guides/multi-agent-system/distributed",
+  "title": "Distributed Deployment",
+  "description": "Deploy agents across multiple servers for independent scaling.",
+  "source": "@site/docs/guides/multi-agent-system/distributed.md",
+  "sourceDirName": "guides/multi-agent-system",
+  "slug": "/guides/multi-agent-system/distributed",
+  "permalink": "/docs/guides/multi-agent-system/distributed",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/multi-agent-system/distributed.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Single Server Deployment",
+    "permalink": "/docs/guides/multi-agent-system/single-server"
+  },
+  "next": {
+    "title": "Agent Communication",
+    "permalink": "/docs/guides/multi-agent-system/agent-communication"
+  }
+}

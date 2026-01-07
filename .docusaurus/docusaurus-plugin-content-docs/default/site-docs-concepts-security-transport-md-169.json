@@ -1,0 +1,24 @@
+{
+  "id": "concepts/security/transport",
+  "title": "Transport Security",
+  "description": "TLS and quantum-safe encryption for ARC Protocol.",
+  "source": "@site/docs/concepts/security/transport.md",
+  "sourceDirName": "concepts/security",
+  "slug": "/concepts/security/transport",
+  "permalink": "/docs/concepts/security/transport",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/security/transport.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Authentication",
+    "permalink": "/docs/concepts/security/authentication"
+  },
+  "next": {
+    "title": "Authorization",
+    "permalink": "/docs/concepts/security/authorization"
+  }
+}

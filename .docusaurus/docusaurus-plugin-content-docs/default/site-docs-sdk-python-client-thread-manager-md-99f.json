@@ -1,0 +1,24 @@
+{
+  "id": "sdk/python/client/thread-manager",
+  "title": "ThreadManager",
+  "description": "Client-side thread management for WebSocket sessions.",
+  "source": "@site/docs/sdk/python/client/thread-manager.md",
+  "sourceDirName": "sdk/python/client",
+  "slug": "/sdk/python/client/thread-manager",
+  "permalink": "/docs/sdk/python/client/thread-manager",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/python/client/thread-manager.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Chat Methods",
+    "permalink": "/docs/sdk/python/client/chat-methods"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/spec/overview"
+  }
+}

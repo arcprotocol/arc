@@ -1,0 +1,24 @@
+{
+  "id": "concepts/protocol-design/single-endpoint",
+  "title": "Single Endpoint",
+  "description": "Single-endpoint multi-agent routing in ARC Protocol.",
+  "source": "@site/docs/concepts/protocol-design/single-endpoint.md",
+  "sourceDirName": "concepts/protocol-design",
+  "slug": "/concepts/protocol-design/single-endpoint",
+  "permalink": "/docs/concepts/protocol-design/single-endpoint",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/protocol-design/single-endpoint.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Stateless RPC",
+    "permalink": "/docs/concepts/protocol-design/stateless-rpc"
+  },
+  "next": {
+    "title": "Error Codes",
+    "permalink": "/docs/concepts/protocol-design/error-codes"
+  }
+}

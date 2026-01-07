@@ -1,0 +1,30 @@
+{
+  "id": "spec/overview",
+  "title": "ARC Protocol Specification",
+  "description": "ARC (Agent Remote Communication) is a stateless, lightweight remote procedure call (RPC) protocol for agent communications in multi-agent systems (MAS) with workflow tracing capabilities, quantum-safe hybrid TLS encryption, and single-endpoint multi-agent routing.",
+  "source": "@site/docs/spec/overview.md",
+  "sourceDirName": "spec",
+  "slug": "/spec/overview",
+  "permalink": "/docs/spec/overview",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/spec/overview.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "overview",
+    "title": "ARC Protocol Specification",
+    "sidebar_label": "Overview",
+    "sidebar_position": 1
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "ThreadManager",
+    "permalink": "/docs/sdk/python/client/thread-manager"
+  },
+  "next": {
+    "title": "Methods",
+    "permalink": "/docs/spec/methods"
+  }
+}

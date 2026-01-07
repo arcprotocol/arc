@@ -1,0 +1,24 @@
+{
+  "id": "guides/supervisor-pattern/index",
+  "title": "Supervisor Pattern",
+  "description": "Implement intelligent routing with a supervisor agent that delegates to specialized sub-agents.",
+  "source": "@site/docs/guides/supervisor-pattern/index.md",
+  "sourceDirName": "guides/supervisor-pattern",
+  "slug": "/guides/supervisor-pattern/",
+  "permalink": "/docs/guides/supervisor-pattern/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/supervisor-pattern/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Agent Communication",
+    "permalink": "/docs/guides/multi-agent-system/agent-communication"
+  },
+  "next": {
+    "title": "Basic Supervisor Implementation",
+    "permalink": "/docs/guides/supervisor-pattern/basic-implementation"
+  }
+}

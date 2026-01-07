@@ -1,0 +1,24 @@
+{
+  "id": "guides/supervisor-pattern/arc-ledger-integration",
+  "title": "ARC Ledger Integration",
+  "description": "Implement dynamic agent discovery and routing using ARC Ledger.",
+  "source": "@site/docs/guides/supervisor-pattern/arc-ledger-integration.md",
+  "sourceDirName": "guides/supervisor-pattern",
+  "slug": "/guides/supervisor-pattern/arc-ledger-integration",
+  "permalink": "/docs/guides/supervisor-pattern/arc-ledger-integration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/supervisor-pattern/arc-ledger-integration.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Basic Supervisor Implementation",
+    "permalink": "/docs/guides/supervisor-pattern/basic-implementation"
+  },
+  "next": {
+    "title": "Dynamic Prompts",
+    "permalink": "/docs/guides/supervisor-pattern/dynamic-prompts"
+  }
+}

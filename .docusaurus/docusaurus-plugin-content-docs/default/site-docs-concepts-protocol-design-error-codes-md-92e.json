@@ -1,0 +1,24 @@
+{
+  "id": "concepts/protocol-design/error-codes",
+  "title": "Error Codes",
+  "description": "ARC Protocol error taxonomy and conventions.",
+  "source": "@site/docs/concepts/protocol-design/error-codes.md",
+  "sourceDirName": "concepts/protocol-design",
+  "slug": "/concepts/protocol-design/error-codes",
+  "permalink": "/docs/concepts/protocol-design/error-codes",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/protocol-design/error-codes.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Single Endpoint",
+    "permalink": "/docs/concepts/protocol-design/single-endpoint"
+  },
+  "next": {
+    "title": "Architecture",
+    "permalink": "/docs/concepts/architecture/"
+  }
+}

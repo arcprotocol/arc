@@ -1,0 +1,24 @@
+{
+  "id": "concepts/security/authorization",
+  "title": "Authorization",
+  "description": "OAuth2 scope validation and permission management.",
+  "source": "@site/docs/concepts/security/authorization.md",
+  "sourceDirName": "concepts/security",
+  "slug": "/concepts/security/authorization",
+  "permalink": "/docs/concepts/security/authorization",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/security/authorization.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Transport Security",
+    "permalink": "/docs/concepts/security/transport"
+  },
+  "next": {
+    "title": "Python SDK",
+    "permalink": "/docs/sdk/python/"
+  }
+}

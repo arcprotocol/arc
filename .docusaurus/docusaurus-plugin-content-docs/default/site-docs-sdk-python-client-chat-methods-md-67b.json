@@ -1,0 +1,24 @@
+{
+  "id": "sdk/python/client/chat-methods",
+  "title": "Chat Methods",
+  "description": "Real-time chat operations for interactive conversations.",
+  "source": "@site/docs/sdk/python/client/chat-methods.md",
+  "sourceDirName": "sdk/python/client",
+  "slug": "/sdk/python/client/chat-methods",
+  "permalink": "/docs/sdk/python/client/chat-methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/python/client/chat-methods.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Task Methods",
+    "permalink": "/docs/sdk/python/client/task-methods"
+  },
+  "next": {
+    "title": "ThreadManager",
+    "permalink": "/docs/sdk/python/client/thread-manager"
+  }
+}

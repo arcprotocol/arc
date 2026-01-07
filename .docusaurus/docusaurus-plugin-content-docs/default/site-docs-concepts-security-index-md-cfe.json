@@ -1,0 +1,24 @@
+{
+  "id": "concepts/security/index",
+  "title": "Security",
+  "description": "Security patterns and best practices for ARC Protocol.",
+  "source": "@site/docs/concepts/security/index.md",
+  "sourceDirName": "concepts/security",
+  "slug": "/concepts/security/",
+  "permalink": "/docs/concepts/security/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/security/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Workflow Composition",
+    "permalink": "/docs/concepts/architecture/workflow-composition"
+  },
+  "next": {
+    "title": "Authentication",
+    "permalink": "/docs/concepts/security/authentication"
+  }
+}

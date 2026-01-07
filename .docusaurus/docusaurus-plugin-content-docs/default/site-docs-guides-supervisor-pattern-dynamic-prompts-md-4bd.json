@@ -1,0 +1,24 @@
+{
+  "id": "guides/supervisor-pattern/dynamic-prompts",
+  "title": "Dynamic Prompts",
+  "description": "Enhance agent prompts with capability information from ARC Ledger.",
+  "source": "@site/docs/guides/supervisor-pattern/dynamic-prompts.md",
+  "sourceDirName": "guides/supervisor-pattern",
+  "slug": "/guides/supervisor-pattern/dynamic-prompts",
+  "permalink": "/docs/guides/supervisor-pattern/dynamic-prompts",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/supervisor-pattern/dynamic-prompts.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "ARC Ledger Integration",
+    "permalink": "/docs/guides/supervisor-pattern/arc-ledger-integration"
+  },
+  "next": {
+    "title": "Protocol Design",
+    "permalink": "/docs/concepts/protocol-design/"
+  }
+}

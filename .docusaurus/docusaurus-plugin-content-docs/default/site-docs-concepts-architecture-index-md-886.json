@@ -1,0 +1,24 @@
+{
+  "id": "concepts/architecture/index",
+  "title": "Architecture",
+  "description": "Multi-agent system architecture patterns for ARC Protocol.",
+  "source": "@site/docs/concepts/architecture/index.md",
+  "sourceDirName": "concepts/architecture",
+  "slug": "/concepts/architecture/",
+  "permalink": "/docs/concepts/architecture/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/architecture/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Error Codes",
+    "permalink": "/docs/concepts/protocol-design/error-codes"
+  },
+  "next": {
+    "title": "Multi-Agent Patterns",
+    "permalink": "/docs/concepts/architecture/multi-agent"
+  }
+}

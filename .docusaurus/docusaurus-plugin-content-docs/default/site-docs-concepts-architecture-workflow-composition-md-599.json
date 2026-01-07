@@ -1,0 +1,24 @@
+{
+  "id": "concepts/architecture/workflow-composition",
+  "title": "Workflow Composition",
+  "description": "Multi-agent workflow orchestration patterns.",
+  "source": "@site/docs/concepts/architecture/workflow-composition.md",
+  "sourceDirName": "concepts/architecture",
+  "slug": "/concepts/architecture/workflow-composition",
+  "permalink": "/docs/concepts/architecture/workflow-composition",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/architecture/workflow-composition.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Supervisor/Router Pattern",
+    "permalink": "/docs/concepts/architecture/supervisor-router"
+  },
+  "next": {
+    "title": "Security",
+    "permalink": "/docs/concepts/security/"
+  }
+}

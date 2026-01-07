@@ -1,0 +1,30 @@
+{
+  "id": "spec/methods",
+  "title": "Protocol Methods",
+  "description": "Complete method reference for ARC Protocol.",
+  "source": "@site/docs/spec/methods.md",
+  "sourceDirName": "spec",
+  "slug": "/spec/methods",
+  "permalink": "/docs/spec/methods",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/spec/methods.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "methods",
+    "title": "Protocol Methods",
+    "sidebar_label": "Methods",
+    "sidebar_position": 2
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/spec/overview"
+  },
+  "next": {
+    "title": "Types",
+    "permalink": "/docs/spec/types"
+  }
+}

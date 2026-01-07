@@ -1,0 +1,24 @@
+{
+  "id": "guides/supervisor-pattern/basic-implementation",
+  "title": "Basic Supervisor Implementation",
+  "description": "Build a supervisor agent with keyword-based routing logic.",
+  "source": "@site/docs/guides/supervisor-pattern/basic-implementation.md",
+  "sourceDirName": "guides/supervisor-pattern",
+  "slug": "/guides/supervisor-pattern/basic-implementation",
+  "permalink": "/docs/guides/supervisor-pattern/basic-implementation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/supervisor-pattern/basic-implementation.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Supervisor Pattern",
+    "permalink": "/docs/guides/supervisor-pattern/"
+  },
+  "next": {
+    "title": "ARC Ledger Integration",
+    "permalink": "/docs/guides/supervisor-pattern/arc-ledger-integration"
+  }
+}

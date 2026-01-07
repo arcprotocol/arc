@@ -1,0 +1,27 @@
+{
+  "id": "index",
+  "title": "ARC Protocol Documentation",
+  "description": "Agent Remote Communication (ARC) Protocol - A stateless RPC protocol for multi-agent systems with quantum-safe hybrid TLS encryption and single-endpoint multi-agent routing.",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "index",
+    "title": "ARC Protocol Documentation",
+    "sidebar_label": "Home",
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "docs",
+  "next": {
+    "title": "Getting Started with ARC Protocol",
+    "permalink": "/docs/getting-started"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "concepts/architecture/multi-agent",
+  "title": "Multi-Agent Patterns",
+  "description": "Multi-agent deployment strategies for ARC Protocol.",
+  "source": "@site/docs/concepts/architecture/multi-agent.md",
+  "sourceDirName": "concepts/architecture",
+  "slug": "/concepts/architecture/multi-agent",
+  "permalink": "/docs/concepts/architecture/multi-agent",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/architecture/multi-agent.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Architecture",
+    "permalink": "/docs/concepts/architecture/"
+  },
+  "next": {
+    "title": "Supervisor/Router Pattern",
+    "permalink": "/docs/concepts/architecture/supervisor-router"
+  }
+}

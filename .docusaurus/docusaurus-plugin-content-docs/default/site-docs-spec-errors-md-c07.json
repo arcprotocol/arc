@@ -1,0 +1,26 @@
+{
+  "id": "spec/errors",
+  "title": "Error Codes",
+  "description": "ARC Protocol error codes and handling.",
+  "source": "@site/docs/spec/errors.md",
+  "sourceDirName": "spec",
+  "slug": "/spec/errors",
+  "permalink": "/docs/spec/errors",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/spec/errors.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "errors",
+    "title": "Error Codes",
+    "sidebar_label": "Errors",
+    "sidebar_position": 4
+  },
+  "sidebar": "docs",
+  "previous": {
+    "title": "Types",
+    "permalink": "/docs/spec/types"
+  }
+}

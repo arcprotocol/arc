@@ -1,0 +1,24 @@
+{
+  "id": "sdk/python/index",
+  "title": "Python SDK",
+  "description": "Official Python implementation of the ARC Protocol.",
+  "source": "@site/docs/sdk/python/index.md",
+  "sourceDirName": "sdk/python",
+  "slug": "/sdk/python/",
+  "permalink": "/docs/sdk/python/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/sdk/python/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Authorization",
+    "permalink": "/docs/concepts/security/authorization"
+  },
+  "next": {
+    "title": "Getting Started",
+    "permalink": "/docs/sdk/python/getting-started"
+  }
+}

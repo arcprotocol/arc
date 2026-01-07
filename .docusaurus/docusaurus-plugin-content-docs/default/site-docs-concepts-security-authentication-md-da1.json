@@ -1,0 +1,24 @@
+{
+  "id": "concepts/security/authentication",
+  "title": "Authentication",
+  "description": "OAuth2 and JWT-based authentication for ARC Protocol.",
+  "source": "@site/docs/concepts/security/authentication.md",
+  "sourceDirName": "concepts/security",
+  "slug": "/concepts/security/authentication",
+  "permalink": "/docs/concepts/security/authentication",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/concepts/security/authentication.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Security",
+    "permalink": "/docs/concepts/security/"
+  },
+  "next": {
+    "title": "Transport Security",
+    "permalink": "/docs/concepts/security/transport"
+  }
+}

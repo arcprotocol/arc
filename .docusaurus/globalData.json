@@ -1,0 +1,192 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "index",
+          "docs": [
+            {
+              "id": "concepts/architecture/index",
+              "path": "/docs/concepts/architecture/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/architecture/multi-agent",
+              "path": "/docs/concepts/architecture/multi-agent",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/architecture/supervisor-router",
+              "path": "/docs/concepts/architecture/supervisor-router",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/architecture/workflow-composition",
+              "path": "/docs/concepts/architecture/workflow-composition",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/protocol-design/error-codes",
+              "path": "/docs/concepts/protocol-design/error-codes",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/protocol-design/index",
+              "path": "/docs/concepts/protocol-design/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/protocol-design/single-endpoint",
+              "path": "/docs/concepts/protocol-design/single-endpoint",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/protocol-design/stateless-rpc",
+              "path": "/docs/concepts/protocol-design/stateless-rpc",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/security/authentication",
+              "path": "/docs/concepts/security/authentication",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/security/authorization",
+              "path": "/docs/concepts/security/authorization",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/security/index",
+              "path": "/docs/concepts/security/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "concepts/security/transport",
+              "path": "/docs/concepts/security/transport",
+              "sidebar": "docs"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/multi-agent-system/agent-communication",
+              "path": "/docs/guides/multi-agent-system/agent-communication",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/multi-agent-system/distributed",
+              "path": "/docs/guides/multi-agent-system/distributed",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/multi-agent-system/index",
+              "path": "/docs/guides/multi-agent-system/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/multi-agent-system/single-server",
+              "path": "/docs/guides/multi-agent-system/single-server",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/supervisor-pattern/arc-ledger-integration",
+              "path": "/docs/guides/supervisor-pattern/arc-ledger-integration",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/supervisor-pattern/basic-implementation",
+              "path": "/docs/guides/supervisor-pattern/basic-implementation",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/supervisor-pattern/dynamic-prompts",
+              "path": "/docs/guides/supervisor-pattern/dynamic-prompts",
+              "sidebar": "docs"
+            },
+            {
+              "id": "guides/supervisor-pattern/index",
+              "path": "/docs/guides/supervisor-pattern/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "index",
+              "path": "/docs/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/index",
+              "path": "/docs/sdk/"
+            },
+            {
+              "id": "sdk/python/client/chat-methods",
+              "path": "/docs/sdk/python/client/chat-methods",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/python/client/index",
+              "path": "/docs/sdk/python/client/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/python/client/task-methods",
+              "path": "/docs/sdk/python/client/task-methods",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/python/client/thread-manager",
+              "path": "/docs/sdk/python/client/thread-manager",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/python/getting-started",
+              "path": "/docs/sdk/python/getting-started",
+              "sidebar": "docs"
+            },
+            {
+              "id": "sdk/python/index",
+              "path": "/docs/sdk/python/",
+              "sidebar": "docs"
+            },
+            {
+              "id": "spec/errors",
+              "path": "/docs/spec/errors",
+              "sidebar": "docs"
+            },
+            {
+              "id": "spec/methods",
+              "path": "/docs/spec/methods",
+              "sidebar": "docs"
+            },
+            {
+              "id": "spec/overview",
+              "path": "/docs/spec/overview",
+              "sidebar": "docs"
+            },
+            {
+              "id": "spec/types",
+              "path": "/docs/spec/types",
+              "sidebar": "docs"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "docs": {
+              "link": {
+                "path": "/docs/",
+                "label": "index"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

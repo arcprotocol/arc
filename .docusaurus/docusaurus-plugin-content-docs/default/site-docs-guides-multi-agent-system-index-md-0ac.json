@@ -1,0 +1,24 @@
+{
+  "id": "guides/multi-agent-system/index",
+  "title": "Multi-Agent System",
+  "description": "Build and deploy multi-agent systems with ARC Protocol.",
+  "source": "@site/docs/guides/multi-agent-system/index.md",
+  "sourceDirName": "guides/multi-agent-system",
+  "slug": "/guides/multi-agent-system/",
+  "permalink": "/docs/guides/multi-agent-system/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/guides/multi-agent-system/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "docs",
+  "previous": {
+    "title": "Getting Started with ARC Protocol",
+    "permalink": "/docs/getting-started"
+  },
+  "next": {
+    "title": "Single Server Deployment",
+    "permalink": "/docs/guides/multi-agent-system/single-server"
+  }
+}
