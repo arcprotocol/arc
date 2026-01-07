@@ -11,9 +11,9 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "tools",
     "resolveJsonModule": true
   },
-  "include": ["src/**/*"],
+  "include": ["tools/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts"]
 }

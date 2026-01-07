@@ -35,7 +35,7 @@ This project adheres to the [ARC Protocol Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ## Schema Management
 
-The ARC Protocol is defined by its OpenAPI schema located at `spec/arc/v1/schema/arc-schema.yaml`. When making changes to the protocol, you'll need to update this schema and regenerate the derived files:
+The ARC Protocol is defined by its OpenAPI schema located at `spec/versions/v1.0/arc-openapi.yaml`. When making changes to the protocol, you'll need to update this schema and regenerate the derived files:
 
 ```bash
 # Generate TypeScript types from the OpenAPI schema
