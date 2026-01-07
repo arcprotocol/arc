@@ -295,8 +295,10 @@ client = ARCClient(
 
 **Flow:**
 ```
-Client → Ledger (query capabilities) → Ledger (return matches)
-       → Manual selection → Protocol → Selected agent
+Client → Ledger (field-based query: capabilities, tags, filters)
+       → Ledger returns all matching agents (unranked)
+       → Manual selection
+       → Protocol routes to selected agent
 ```
 
 **Implementation:**
@@ -318,11 +320,11 @@ response = await client.task_create(...)
 
 **Characteristics:**
 - Dynamic endpoint resolution
-- Capability-based discovery
-- Manual agent selection from results
+- Field-based capability search
+- Manual agent selection from unranked results
 - Decoupled agent deployment
 
-**Use Case:** Medium-scale systems, capability-based search, human-in-loop selection.
+**Use Case:** Medium-scale systems, field-based agent search, human-in-loop selection.
 
 ---
 
@@ -337,26 +339,28 @@ response = await client.task_create(...)
 
 **Flow:**
 ```
-Client → Compass (semantic query)
+Client → Compass (natural language query)
        ↓
-     Ledger (capability search)
+     Compass queries Ledger (field-based capability search)
        ↓
-     Compass (ranking: semantic + ML + performance)
+     Ledger returns all matching agents (unranked)
        ↓
-     Protocol (auto-route to top-ranked agent)
+     Compass ranks agents (semantic + ML + performance)
        ↓
-     Selected agent → Response
+     Protocol routes to top-ranked agent
+       ↓
+     Agent executes → Response
 ```
 
 **Implementation:**
 ```python
-# Single call to Compass
+# Single semantic query to Compass
 compass = CompassClient(api_key="key")
 result = compass.select_agent(
     query="Book luxury hotel in Paris with Michelin restaurant"
 )
 
-# Protocol auto-routes to optimal agent
+# Compass returns top-ranked agent after querying Ledger internally
 client = ARCClient(
     endpoint=result.top_agent.endpoint,
     token="token"
@@ -365,44 +369,45 @@ response = await client.task_create(...)
 ```
 
 **Characteristics:**
-- Semantic query understanding
+- Natural language query input
 - Intelligent multi-factor ranking
-- Autonomous agent selection
-- Performance-based optimization
+- Autonomous optimal agent selection
+- Performance-based optimization over time
 
-**Use Case:** Large-scale systems, complex queries, autonomous operation.
+**Use Case:** Large-scale systems, natural language queries, autonomous intelligent routing.
 
 ---
 
 ## Data Flow Example
 
-**Query:** "Book luxury hotel in Paris with Michelin restaurant"
+**User Query:** "Book luxury hotel in Paris with Michelin restaurant"
 
-**Step 1: Compass Analysis**
-- Extract semantic intent: luxury accommodation, specific location, dining requirement
-- Map to capability requirements: `hotel-booking`, `restaurant-search`, `luxury-travel`
+**Step 1: Compass Receives Natural Language Query**
+- Parse semantic intent: luxury accommodation, Paris location, Michelin dining
+- Map to field filters for Ledger query
 
-**Step 2: Ledger Query**
-- Compass queries Ledger with field filters: `tag="hotel", capabilities=["luxury-travel", "restaurant-booking"]`
+**Step 2: Compass Queries Ledger**
+- Compass sends field-based query: `tag="hotel", capabilities=["luxury-travel", "restaurant-booking"], location="Paris"`
 - Ledger returns: 47 matching agents (unranked)
 
-**Step 3: Compass Ranking**
-- Semantic relevance: Score agent descriptions against query intent (Paris, luxury, Michelin)
-- Performance history: Weight by response times and success rates
-- Capability depth: Evaluate specialization strength
-- Availability: Filter by real-time status
+**Step 3: Compass Applies Ranking Algorithm**
+- Semantic relevance: Score agent descriptions against original natural language query
+- Performance history: Weight by historical response times and success rates
+- Capability depth: Evaluate specialization strength in luxury hospitality
+- Availability: Filter by real-time agent status
 
-**Step 4: Ranked Output**
+**Step 4: Compass Returns Ranked Results**
 ```
 1. Agent: paris-luxury-concierge (Score: 0.94)
 2. Agent: michelin-travel-specialist (Score: 0.89)
 3. Agent: europe-hospitality-pro (Score: 0.82)
 ```
 
-**Step 5: Protocol Routing**
-- Auto-connect to `paris-luxury-concierge`
-- Execute booking request
-- Handle response with workflow tracing
+**Step 5: Protocol Routes to Top Agent**
+- Client receives top-ranked agent from Compass
+- Protocol establishes connection to `paris-luxury-concierge`
+- Execute booking request with workflow tracing
+- Return response to client
 
 ---
 
