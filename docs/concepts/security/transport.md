@@ -16,7 +16,9 @@ Certificate Validation: Required
 
 ## Quantum-Safe Hybrid TLS
 
-ARC Python SDK supports hybrid TLS combining classical and post-quantum cryptography.
+ARC Protocol implements post-quantum end-to-end encryption using hybrid TLS (X25519Kyber768), combining classical elliptic curve cryptography with NIST-standardized Module-Lattice-Based Key Encapsulation Mechanism (ML-KEM, FIPS 203). This provides protection against both current and future quantum computing attacks.
+
+The Python SDK supports hybrid TLS combining classical and post-quantum cryptography.
 
 ### Algorithm
 
