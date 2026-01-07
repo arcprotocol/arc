@@ -71,6 +71,11 @@
               "sidebar": "docs"
             },
             {
+              "id": "ecosystem",
+              "path": "/docs/ecosystem",
+              "sidebar": "docs"
+            },
+            {
               "id": "getting-started",
               "path": "/docs/getting-started",
               "sidebar": "docs"

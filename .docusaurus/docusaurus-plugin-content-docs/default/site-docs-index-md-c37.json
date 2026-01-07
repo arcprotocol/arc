@@ -22,7 +22,7 @@
   },
   "sidebar": "docs",
   "next": {
-    "title": "Getting Started",
-    "permalink": "/docs/getting-started"
+    "title": "Ecosystem Architecture",
+    "permalink": "/docs/ecosystem"
   }
 }
