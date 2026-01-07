@@ -1,370 +1,169 @@
-# Getting Started with ARC Protocol
-
-Welcome to the **Agent Remote Communication (ARC) Protocol**! This guide will help you understand and implement ARC in your multi-agent system.
-
+---
+id: getting-started
+title: Getting Started
+sidebar_position: 2
 ---
 
-## 📋 Table of Contents
+# Getting Started
 
-1. [What is ARC Protocol?](#what-is-arc-protocol)
-2. [Core Concepts](#core-concepts)
-3. [Quick Example](#quick-example)
-4. [Protocol Structure](#protocol-structure)
-5. [Implementing a Client](#implementing-a-client)
-6. [Implementing a Server](#implementing-a-server)
-7. [Next Steps](#next-steps)
+## Protocol Overview
 
----
+**Core Features:**
+- Single endpoint serves multiple agents via `targetAgent` routing
+- Stateless RPC design with JSON serialization
+- Workflow tracing via `traceId` propagation
+- Quantum-safe hybrid TLS (X25519 + Kyber-768)
+- Server-Sent Events (SSE) for real-time streaming
 
-## What is ARC Protocol?
-
-**ARC (Agent Remote Communication)** is a communication protocol designed for multi-agent systems. It enables:
-
-- **🎯 Single Endpoint Architecture** - Deploy multiple agents behind one URL
-- **🔀 Agent-Level Routing** - Route requests to specific agents using `targetAgent`
-- **📊 Workflow Tracing** - Track multi-agent workflows with `traceId`
-- **⚡ Real-time Streaming** - SSE support for chat responses
-- **🔒 Quantum-Safe Security** - Hybrid TLS with post-quantum cryptography
-
----
-
-## Core Concepts
-
-### 1. **Request/Response Structure**
-
-Every ARC request follows this format:
-
-```json
-{
-  "arc": "1.0",
-  "id": "req_123",
-  "method": "chat.start",
-  "requestAgent": "agent-a",
-  "targetAgent": "agent-b",
-  "params": { ... },
-  "traceId": "workflow_abc"
-}
-```
-
-Every ARC response:
-
-```json
-{
-  "arc": "1.0",
-  "id": "req_123",
-  "responseAgent": "agent-b",
-  "targetAgent": "agent-a",
-  "result": { ... },
-  "error": null,
-  "traceId": "workflow_abc"
-}
-```
-
-### 2. **Methods**
-
-ARC has two main method categories:
-
-#### **Task Methods** (Asynchronous)
-For long-running operations:
-- `task.create` - Create a new task
-- `task.send` - Send additional data
-- `task.info` - Get task status
-- `task.cancel` - Cancel task
-
-#### **Chat Methods** (Real-time)
-For interactive conversations:
-- `chat.start` - Begin a chat
-- `chat.message` - Send message
-- `chat.end` - End chat
-
-### 3. **Agent Routing**
-
-Route to specific agents using the `targetAgent` field:
-
-```json
-{
-  "targetAgent": "finance-agent",  // Route to finance agent
-  "method": "task.create",
-  ...
-}
-```
-
-Multiple agents can run on the same server endpoint!
-
----
-
-## Quick Example
-
-### Creating a Task
-
-**Request:**
-```json
-POST /arc HTTP/1.1
-Host: api.company.com
-Content-Type: application/arc+json
-
-{
-  "arc": "1.0",
-  "id": "req_001",
-  "method": "task.create",
-  "requestAgent": "user-interface",
-  "targetAgent": "document-analyzer",
-  "params": {
-    "initialMessage": {
-      "role": "user",
-      "parts": [
-        {
-          "type": "TextPart",
-          "content": "Analyze this quarterly report"
-        }
-      ]
-    },
-    "priority": "HIGH"
-  }
-}
-```
-
-**Response:**
-```json
-{
-  "arc": "1.0",
-  "id": "req_001",
-  "responseAgent": "document-analyzer",
-  "targetAgent": "user-interface",
-  "result": {
-    "type": "task",
-    "task": {
-      "taskId": "task-12345",
-      "status": "SUBMITTED",
-      "createdAt": "2024-01-15T10:30:00Z"
-    }
-  },
-  "error": null
-}
-```
-
----
+**Transport:** HTTPS  
+**Content-Type:** `application/arc+json`  
+**Authentication:** OAuth2 Bearer Token
 
 ## Protocol Structure
 
-### Message Parts
-
-ARC supports multiple content types in messages:
-
-```json
-{
-  "role": "user",
-  "parts": [
-    {
-      "type": "TextPart",
-      "content": "Hello world"
-    },
-    {
-      "type": "FilePart",
-      "content": "base64...",
-      "mimeType": "application/pdf",
-      "filename": "report.pdf"
-    },
-    {
-      "type": "ImagePart",
-      "content": "base64...",
-      "mimeType": "image/jpeg",
-      "width": 1920,
-      "height": 1080
-    }
-  ]
-}
-```
-
-### Error Handling
-
-Errors follow a structured format:
+### Request Format
 
 ```json
 {
   "arc": "1.0",
-  "id": "req_001",
+  "id": "unique-request-id",
+  "method": "task.create",
+  "requestAgent": "client-id",
+  "targetAgent": "destination-agent",
+  "params": { /* method-specific parameters */ },
+  "traceId": "workflow-trace-id"
+}
+```
+
+### Response Format
+
+```json
+{
+  "arc": "1.0",
+  "id": "unique-request-id",
+  "responseAgent": "destination-agent",
+  "targetAgent": "client-id",
+  "result": { /* method-specific result */ },
+  "error": null,
+  "traceId": "workflow-trace-id"
+}
+```
+
+### Error Format
+
+```json
+{
+  "arc": "1.0",
+  "id": "unique-request-id",
   "responseAgent": "server",
-  "targetAgent": "client",
+  "targetAgent": "client-id",
   "result": null,
   "error": {
     "code": -41001,
-    "message": "Agent not found: unknown-agent",
-    "details": {
-      "agentId": "unknown-agent",
-      "availableAgents": ["agent-a", "agent-b"]
-    }
+    "message": "Agent not found",
+    "details": { /* error-specific details */ }
   }
 }
 ```
 
-**Common Error Codes:**
-- `-32600` - Invalid request
-- `-32601` - Method not found
-- `-41001` - Agent not found
-- `-42001` - Task not found
-- `-43001` - Chat not found
-- `-44001` - Authentication failed
+## Available Methods
 
----
+### Task Methods
+Asynchronous operations for long-running work:
 
-## Implementing a Client
+| Method | Purpose |
+|--------|---------|
+| `task.create` | Create new task with initial message |
+| `task.send` | Send additional message to existing task |
+| `task.info` | Query task status and history |
+| `task.cancel` | Cancel running task |
+| `task.subscribe` | Subscribe to task status notifications |
+| `task.notification` | Server-initiated notification (server-to-client) |
 
-### Python SDK Example
+### Chat Methods
+Real-time streaming for interactive conversations:
+
+| Method | Purpose |
+|--------|---------|
+| `chat.start` | Begin new chat session with initial message |
+| `chat.message` | Send message in active chat session |
+| `chat.end` | Terminate active chat session |
+
+## Quick Start with Python SDK
+
+### Installation
+
+```bash
+pip install arc-sdk
+
+# With quantum-safe TLS support
+pip install arc-sdk[pqc]
+```
+
+### Client Example
 
 ```python
-from arc import Client
+from arc import ARCClient
 
-# Initialize client
-client = Client(
-    "https://api.company.com/arc",
+client = ARCClient(
+    endpoint="https://api.example.com/arc",
     token="your-oauth2-token"
 )
 
 # Create a task
-task = await client.task.create(
-    target_agent="document-analyzer",
+response = await client.task_create(
+    target_agent="booking-agent",
     initial_message={
         "role": "user",
-        "parts": [{"type": "TextPart", "content": "Analyze report"}]
-    },
-    priority="HIGH"
-)
-
-print(f"Task created: {task['result']['task']['taskId']}")
-
-# Start a chat
-chat = await client.chat.start(
-    target_agent="support-agent",
-    initial_message={
-        "role": "user",
-        "parts": [{"type": "TextPart", "content": "Help me"}]
+        "parts": [{"type": "text", "content": "Book flight to Paris"}]
     }
 )
 
-print(f"Chat started: {chat['result']['chat']['chatId']}")
+task_id = response["result"]["task"]["taskId"]
 ```
 
-### Raw HTTP Example
+### Server Example
 
 ```python
-import requests
+from arc import ARCServer
 
-url = "https://api.company.com/arc"
-headers = {
-    "Content-Type": "application/arc+json",
-    "Authorization": "Bearer your-token"
-}
+server = ARCServer(server_id="booking-server")
 
-request = {
-    "arc": "1.0",
-    "id": "req_001",
-    "method": "task.create",
-    "requestAgent": "my-client",
-    "targetAgent": "document-analyzer",
-    "params": {
-        "initialMessage": {
-            "role": "user",
-            "parts": [{"type": "TextPart", "content": "Analyze report"}]
-        }
-    }
-}
-
-response = requests.post(url, json=request, headers=headers)
-print(response.json())
-```
-
----
-
-## Implementing a Server
-
-### Python SDK Example
-
-```python
-from arc import Server
-
-# Create server
-server = Server(server_id="my-server")
-
-# Register agent handler
-@server.agent_handler("finance-agent", "task.create")
-async def handle_finance_task(params, context):
-    initial_msg = params["initialMessage"]
+@server.task_handler("booking-agent")
+async def handle_booking(params, context):
+    message = params["initialMessage"]
     
-    # Your agent logic here
-    task_id = "task-123"
+    # Process booking logic
+    task_id = create_booking_task(message)
     
     return {
         "type": "task",
         "task": {
             "taskId": task_id,
             "status": "SUBMITTED",
-            "createdAt": "2024-01-15T10:30:00Z"
+            "createdAt": datetime.utcnow().isoformat() + "Z"
         }
     }
 
-# Register chat handler
-@server.agent_handler("support-agent", "chat.start")
-async def handle_support_chat(params, context):
-    initial_msg = params["initialMessage"]
-    
-    # Your chat logic here
-    response_msg = {
-        "role": "agent",
-        "parts": [{"type": "TextPart", "content": "How can I help?"}]
-    }
-    
-    return {
-        "type": "chat",
-        "chat": {
-            "chatId": "chat-456",
-            "status": "ACTIVE",
-            "message": response_msg
-        }
-    }
-
-# Run server
 server.run(host="0.0.0.0", port=8000)
 ```
 
----
-
 ## Next Steps
 
-### 📚 Learn More
+**Implementation Guides:**
+- [Multi-Agent System](guides/multi-agent-system/index.md) - Deploy multiple agents on single or distributed servers
+- [Supervisor Pattern](guides/supervisor-pattern/index.md) - Intelligent routing with ARC Compass and Ledger
 
-1. **[Complete Specification](../spec/arc-specification.md)** - Full protocol details
-2. **[Best Practices](concepts/best-practices.md)** - Implementation guidelines
-3. **[SDK Documentation](sdk/)** - Language-specific guides
+**Core Concepts:**
+- [Protocol Design](concepts/protocol-design/index.md) - Stateless RPC, single-endpoint architecture, error handling
+- [Architecture](concepts/architecture/index.md) - Multi-agent patterns, supervisor/router, workflow composition
+- [Security](concepts/security/index.md) - OAuth2 authentication, quantum-safe TLS, authorization
 
-### 🔧 Explore Features
+**SDK Documentation:**
+- [Python SDK](sdk/python/index.md) - Complete client/server implementation
+- [Client Methods](sdk/python/client/index.md) - Task and chat operations
+- [Server Implementation](sdk/python/server/index.md) - Handler registration and routing
 
-1. **Workflow Tracing** - Track multi-agent workflows with `traceId`
-2. **Streaming Responses** - Use SSE for real-time chat
-3. **Quantum-Safe Security** - Enable hybrid TLS encryption
-
-### 🤝 Get Involved
-
-1. **[GitHub Repository](https://github.com/arcprotocol/arcprotocol)** - View source code
-2. **[Contributing Guidelines](../CONTRIBUTING.md)** - Contribute to the project
-3. **[Issue Tracker](https://github.com/arcprotocol/arcprotocol/issues)** - Report bugs or request features
-
----
-
-## 📖 Additional Resources
-
-- [Python SDK](https://github.com/arcprotocol/python-sdk) - Python implementation
-- [ARC Compass](https://github.com/arcprotocol/arccompass) - Agent discovery
-- [ARC Ledger](https://github.com/arcprotocol/arcledger) - Agent registry
-
----
-
-**Need Help?** 
-- Check the [full documentation](index.md)
-- Open an [issue](https://github.com/arcprotocol/arcprotocol/issues)
-- Review [examples](../examples/)
-
----
-
-**Ready to build?** Start implementing your first ARC agent! 🚀
-
+**Specification:**
+- [ARC Specification](spec/overview.md) - Complete technical specification
+- [OpenRPC Schema](https://github.com/arcprotocol/arcprotocol/tree/main/spec/versions/v1.0) - Machine-readable protocol definition

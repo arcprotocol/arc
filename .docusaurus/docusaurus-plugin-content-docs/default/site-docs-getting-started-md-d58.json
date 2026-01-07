@@ -1,7 +1,7 @@
 {
   "id": "getting-started",
-  "title": "Getting Started with ARC Protocol",
-  "description": "Welcome to the Agent Remote Communication (ARC) Protocol! This guide will help you understand and implement ARC in your multi-agent system.",
+  "title": "Getting Started",
+  "description": "Protocol Overview",
   "source": "@site/docs/getting-started.md",
   "sourceDirName": ".",
   "slug": "/getting-started",
@@ -11,7 +11,12 @@
   "editUrl": "https://github.com/arcprotocol/arcprotocol/tree/main/docs/getting-started.md",
   "tags": [],
   "version": "current",
-  "frontMatter": {},
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "getting-started",
+    "title": "Getting Started",
+    "sidebar_position": 2
+  },
   "sidebar": "docs",
   "previous": {
     "title": "Home",

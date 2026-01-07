@@ -6,7 +6,7 @@
 export default {
   "title": "ARC Protocol",
   "tagline": "Agent Remote Communication Protocol",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/arc_logo.jpeg",
   "url": "https://arc-protocol.org",
   "baseUrl": "/",
   "organizationName": "arcprotocol",

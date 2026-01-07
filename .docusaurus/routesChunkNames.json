@@ -1,203 +1,160 @@
 {
-  "/__docusaurus/debug-5ff": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/config-5ba": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/content-a2b": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    },
-    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
-  },
-  "/__docusaurus/debug/globalData-c3c": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/metadata-156": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/registry-88c": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
-  "/__docusaurus/debug/routes-000": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debugb-38-ad3"
-    }
-  },
   "/search-822": {
-    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__comp": "1a4e3797",
     "__context": {
-      "plugin": "plugin---search-138-688"
+      "plugin": "138e0e15"
     }
   },
   "/docs-661": {
-    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__comp": "5e95c892",
     "__context": {
-      "plugin": "plugin---docsaba-d7c"
+      "plugin": "aba21aa0"
     }
   },
   "/docs-ee5": {
-    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
-    "__props": "__props---docs-005-788"
+    "__comp": "a7bd4aaa",
+    "__props": "0058b4c6"
   },
   "/docs-f96": {
-    "__comp": "__comp---theme-doc-roota-94-67a"
+    "__comp": "a94703ab"
   },
   "/docs/-56e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-c-37-4d0"
+    "__comp": "17896441",
+    "content": "c377a04b"
   },
   "/docs/concepts/architecture/-edd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-architecture-886-648"
+    "__comp": "17896441",
+    "content": "8863d8d5"
   },
   "/docs/concepts/architecture/multi-agent-c21": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-architecture-multi-agent-0-a-6-39a"
+    "__comp": "17896441",
+    "content": "0a6b6c7f"
   },
   "/docs/concepts/architecture/supervisor-router-112": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-architecture-supervisor-router-951-977"
+    "__comp": "17896441",
+    "content": "9511dabf"
   },
   "/docs/concepts/architecture/workflow-composition-195": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-architecture-workflow-composition-599-1e4"
+    "__comp": "17896441",
+    "content": "5992a0e8"
   },
   "/docs/concepts/protocol-design/-592": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-protocol-design-9-d-5-fbd"
+    "__comp": "17896441",
+    "content": "9d506d3b"
   },
   "/docs/concepts/protocol-design/error-codes-549": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-protocol-design-error-codes-92-e-012"
+    "__comp": "17896441",
+    "content": "92e999d5"
   },
   "/docs/concepts/protocol-design/single-endpoint-caf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-protocol-design-single-endpoint-245-b28"
+    "__comp": "17896441",
+    "content": "245d43b3"
   },
   "/docs/concepts/protocol-design/stateless-rpc-f53": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-protocol-design-stateless-rpc-3-a-5-f00"
+    "__comp": "17896441",
+    "content": "3a54d257"
   },
   "/docs/concepts/security/-1bd": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-security-cfe-195"
+    "__comp": "17896441",
+    "content": "cfe0aa94"
   },
   "/docs/concepts/security/authentication-7bc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-security-authenticationda-1-e9f"
+    "__comp": "17896441",
+    "content": "da18fc08"
   },
   "/docs/concepts/security/authorization-e6e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-security-authorization-61-a-1d1"
+    "__comp": "17896441",
+    "content": "61a9fd3d"
   },
   "/docs/concepts/security/transport-791": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-concepts-security-transport-169-c05"
+    "__comp": "17896441",
+    "content": "169da32e"
   },
   "/docs/getting-started-565": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-getting-startedd-58-f94"
+    "__comp": "17896441",
+    "content": "d589d3a7"
   },
   "/docs/guides/multi-agent-system/-f73": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-multi-agent-system-0-ac-8da"
+    "__comp": "17896441",
+    "content": "0ac306d0"
   },
   "/docs/guides/multi-agent-system/agent-communication-6de": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-multi-agent-system-agent-communication-7-eb-573"
+    "__comp": "17896441",
+    "content": "7eba1f62"
   },
   "/docs/guides/multi-agent-system/distributed-044": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-multi-agent-system-distributed-8-e-9-e70"
+    "__comp": "17896441",
+    "content": "8e9504cd"
   },
   "/docs/guides/multi-agent-system/single-server-cd8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-multi-agent-system-single-serverfa-0-7ce"
+    "__comp": "17896441",
+    "content": "fa06349f"
   },
   "/docs/guides/supervisor-pattern/-b02": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-supervisor-pattern-614-3db"
+    "__comp": "17896441",
+    "content": "614f404f"
   },
   "/docs/guides/supervisor-pattern/arc-ledger-integration-98a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-supervisor-pattern-arc-ledger-integrationa-5-a-81e"
+    "__comp": "17896441",
+    "content": "a5a51885"
   },
   "/docs/guides/supervisor-pattern/basic-implementation-2ea": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-supervisor-pattern-basic-implementation-4-e-4-403"
+    "__comp": "17896441",
+    "content": "4e4efe81"
   },
   "/docs/guides/supervisor-pattern/dynamic-prompts-7e9": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-supervisor-pattern-dynamic-prompts-4-bd-7bc"
+    "__comp": "17896441",
+    "content": "4bd95f64"
   },
   "/docs/sdk/-3a8": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-e-05-741"
+    "__comp": "17896441",
+    "content": "e0557e97"
   },
   "/docs/sdk/python/-51a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-d-57-20e"
+    "__comp": "17896441",
+    "content": "d5749909"
   },
   "/docs/sdk/python/client/-d46": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-client-ebd-138"
+    "__comp": "17896441",
+    "content": "ebd3ebcd"
   },
   "/docs/sdk/python/client/chat-methods-818": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-client-chat-methods-67-b-b08"
+    "__comp": "17896441",
+    "content": "67b85f95"
   },
   "/docs/sdk/python/client/task-methods-5af": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-client-task-methods-23-d-d87"
+    "__comp": "17896441",
+    "content": "23d0c82a"
   },
   "/docs/sdk/python/client/thread-manager-a4f": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-client-thread-manager-99-f-7a6"
+    "__comp": "17896441",
+    "content": "99f14c52"
   },
   "/docs/sdk/python/getting-started-930": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-sdk-python-getting-started-8-ad-0dd"
+    "__comp": "17896441",
+    "content": "8ad334da"
   },
   "/docs/spec/errors-bcc": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-spec-errorsc-07-2f8"
+    "__comp": "17896441",
+    "content": "c07c90eb"
   },
   "/docs/spec/methods-b55": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-spec-methods-1-e-6-d32"
+    "__comp": "17896441",
+    "content": "1e61295b"
   },
   "/docs/spec/overview-3bf": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-spec-overview-2-c-2-1db"
+    "__comp": "17896441",
+    "content": "2c2ae92f"
   },
   "/docs/spec/types-628": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-spec-typesce-3-6bb"
+    "__comp": "17896441",
+    "content": "ce3523b0"
   },
   "/-2e1": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---a-74-9d6"
+      "plugin": "a7456010"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }

@@ -104,10 +104,6 @@ Follow the appropriate guide:
 Implement agent-to-agent communication:
 - [Agent Communication Guide](./agent-communication.md)
 
-## Examples
-
-All guides include complete, working examples using Python SDK.
-
 ## Links
 
 - [Architecture Concepts](../../concepts/architecture/)

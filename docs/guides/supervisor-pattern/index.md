@@ -124,10 +124,6 @@ Deploy supervisor agent with routing logic.
 
 Send diverse requests through supervisor and verify correct routing.
 
-## Examples
-
-All guides include complete, working examples.
-
 ## Links
 
 - [Multi-Agent System](../multi-agent-system/) - Deploy multiple agents

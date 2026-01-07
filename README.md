@@ -2,9 +2,8 @@
 
 [![GitHub license](https://img.shields.io/github/license/arcprotocol/arcprotocol)](https://github.com/arcprotocol/arcprotocol/blob/main/LICENSE)
 [![PyPI version](https://img.shields.io/pypi/v/arc-sdk.svg)](https://pypi.org/project/arc-sdk/1.2.1/)
-[![RepoMapr](https://img.shields.io/badge/View%20on-RepoMapr-blue)](https://repomapr.com/arcprotocol/arcprotocol)
 
-**ARC (Agent Remote Communication)** is a communication standard between agents for multi-agent systems. The protocol enables hosting multiple agent types on a single endpoint with agent-level routing via `requestAgent` and `targetAgent` fields, and provides workflow tracing capabilities.
+**ARC (Agent Remote Communication)** is a stateless RPC protocol designed for multi-agent systems. It provides a unified communication standard that enables deploying multiple specialized agents behind a single endpoint with intelligent routing capabilities. The protocol implements quantum-safe hybrid TLS encryption (X25519 + Kyber-768) for future-proof security, single-endpoint multi-agent routing via `targetAgent` field for simplified infrastructure, and comprehensive workflow tracing through `traceId` propagation for observability across distributed agent architectures. Built on HTTPS with JSON serialization, ARC supports both asynchronous task-based operations and real-time chat interactions with Server-Sent Events streaming.
 
 > [!IMPORTANT]
 > **Quantum-Resistant Security**: ARC Protocol implements post-quantum end-to-end encryption using hybrid TLS (X25519Kyber768), combining classical elliptic curve cryptography with NIST-standardized Module-Lattice-Based Key Encapsulation Mechanism (ML-KEM, FIPS 203). This provides protection against both current and future quantum computing attacks.
@@ -58,11 +57,20 @@ pip install arc-sdk[pqc]
 
 ## Documentation
 
-- [Protocol Specification](./docs/arc-protocol-specification.md)
-- [Best Practices](./docs/topics/best-practices.md)
-- [Topics](./docs/topics/)
-  - [ARC Ledger Integration](./docs/topics/arc-ledger-integration.md)
-  - [Ecosystem Integration](./docs/topics/ecosystem-integration.md)
+**Website:** [arc-protocol.org](https://arc-protocol.org)
+
+**Local Documentation:**
+- [Protocol Specification](./spec/arc-specification.md)
+- [Getting Started](./docs/getting-started.md)
+- [Examples](./examples/)
+
+**Online Documentation:**
+- [Getting Started](https://arc-protocol.org/docs/getting-started)
+- [Protocol Specification](https://arc-protocol.org/docs/spec/overview)
+- [Python SDK](https://arc-protocol.org/docs/sdk/python)
+- [Multi-Agent System Guide](https://arc-protocol.org/docs/guides/multi-agent-system)
+- [Supervisor Pattern Guide](https://arc-protocol.org/docs/guides/supervisor-pattern)
+- [Concepts](https://arc-protocol.org/docs/concepts/protocol-design)
 
 
 ## ARC Ecosystem
@@ -71,8 +79,9 @@ pip install arc-sdk[pqc]
 > While ARC Protocol can be used as a standalone communication protocol between agents, it works best as part of the ARC ecosystem.
 
 - **[ARC Protocol](https://github.com/arcprotocol/arcprotocol)**: This repository - the communication standard between agents
-- **[ARC Compass](https://github.com/arcprotocol/arccompass)**: Agent search engine that finds appropriate agents without ranking algorithms
+- **[ARC Compass](https://github.com/arcprotocol/arccompass)**: Intelligent agent ranking engine for optimal agent selection
 - **[ARC Ledger](https://github.com/arcprotocol/arcledger)**: Centralized agent discovery registry
+- **[Python SDK](https://github.com/arcprotocol/python-sdk)**: Python implementation with quantum-safe TLS support
 
 ARC Protocol works effectively with other components in the ARC ecosystem. The protocol's workflow tracing capabilities integrate with external monitoring and observability platforms, enabling tracking of multi-agent workflows. This design works with existing monitoring solutions while maintaining protocol simplicity.
 
