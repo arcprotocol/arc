@@ -1,0 +1,468 @@
+/* Hero Section - Unified with Network and Ecosystem */
+.heroSection {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFBFC 50%, #FFFFFF 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBanner {
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(17, 83, 97, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Ecosystem Strip - Compact below Network */
+.ecosystemStrip {
+  padding: 2rem 2rem 6rem;
+  position: relative;
+}
+
+.ecosystemLabel {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #A7BCC4;
+  margin-bottom: 1.5rem;
+}
+
+.ecosystemItems {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ecosystemCard {
+  flex: 1;
+  text-align: center;
+  padding: 2.5rem 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(167, 188, 196, 0.2);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(56, 63, 91, 0.04);
+}
+
+.ecosystemCard:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(17, 83, 97, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(17, 83, 97, 0.12);
+}
+
+.ecosystemCard h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+  color: #115361;
+  letter-spacing: -0.02em;
+}
+
+.ecosystemCard p {
+  font-size: 0.9375rem;
+  color: #5A6273;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .ecosystemItems {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .ecosystemCard {
+    padding: 1.25rem 1rem;
+  }
+}
+
+/* Network Visualization within Hero Section */
+.networkSection {
+  padding: 0 2rem 4rem;
+  position: relative;
+}
+
+/* Old Ecosystem Section - now unused */
+.ecosystemSection {
+  display: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #383F5B 0%, #115361 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #5A6273;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.011em;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.quickInstall {
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.quickInstall code {
+  background: rgba(56, 63, 91, 0.05);
+  color: #115361;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 1px solid rgba(56, 63, 91, 0.1);
+  display: inline-block;
+}
+
+/* Code Section */
+.codeSection {
+  padding: 8rem 2rem;
+  background: #FAFBFC;
+}
+
+.codeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.codeContent h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #383F5B;
+  letter-spacing: -0.035em;
+}
+
+.codeContent p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #5A6273;
+  margin-bottom: 2rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.featureList li {
+  font-size: 1.125rem;
+  padding: 0.75rem 0;
+  color: #383F5B;
+  font-weight: 500;
+}
+
+.codeBlock {
+  background: #383F5B;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 60px rgba(56, 63, 91, 0.15);
+  overflow: hidden;
+}
+
+.codeBlock pre {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+.codeBlock code {
+  color: #A7BCC4;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+/* Use Cases Section */
+.useCases {
+  padding: 6rem 2rem;
+  background: #FFFFFF;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: #383F5B;
+  letter-spacing: -0.035em;
+}
+
+.useCaseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.useCase {
+  padding: 2.5rem;
+  background: #FAFBFC;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 63, 91, 0.06);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.useCase:hover {
+  border-color: rgba(17, 83, 97, 0.2);
+  box-shadow: 0 8px 24px rgba(56, 63, 91, 0.06);
+}
+
+.useCase h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #383F5B;
+  letter-spacing: -0.022em;
+}
+
+.useCase p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #5A6273;
+  margin: 0;
+}
+
+/* Old Ecosystem Section - now unused */
+.ecosystem {
+  display: none;
+}
+
+.ecosystemGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ecosystemItem {
+  text-align: center;
+  padding: 2rem;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid rgba(56, 63, 91, 0.08);
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ecosystemItem:hover {
+  border-color: #115361;
+  box-shadow: 0 8px 24px rgba(17, 83, 97, 0.08);
+}
+
+.ecosystemItem h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #115361;
+  letter-spacing: -0.022em;
+}
+
+.ecosystemItem p {
+  font-size: 0.9375rem;
+  color: #5A6273;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #383F5B 0%, #115361 100%);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.cta h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.035em;
+  color: #FFFFFF;
+}
+
+.cta p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  color: #A7BCC4;
+}
+
+.ctaButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 996px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+  
+  .codeGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .codeContent h2 {
+    font-size: 2.25rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2.25rem;
+  }
+  
+  .cta h2 {
+    font-size: 2.5rem;
+  }
+  
+  .heroBanner {
+    padding: 5rem 1.5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .heroTitle {
+    font-size: 2.25rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .button--lg {
+    width: 100%;
+  }
+  
+  .useCaseGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .ecosystemGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Mode Adjustments */
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(180deg, #1a1d2e 0%, #232738 100%);
+}
+
+[data-theme='dark'] .heroBanner::before {
+  background: radial-gradient(circle at 50% 0%, rgba(167, 188, 196, 0.08) 0%, transparent 70%);
+}
+
+[data-theme='dark'] .heroTitle {
+  background: linear-gradient(135deg, #E8EDF2 0%, #A7BCC4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: #A7BCC4;
+}
+
+[data-theme='dark'] .quickInstall code {
+  background: rgba(167, 188, 196, 0.1);
+  color: #A7BCC4;
+  border-color: rgba(167, 188, 196, 0.15);
+}
+
+[data-theme='dark'] .useCase h3,
+[data-theme='dark'] .codeContent h2,
+[data-theme='dark'] .sectionTitle {
+  color: #E8EDF2;
+}
+
+[data-theme='dark'] .codeContent p,
+[data-theme='dark'] .useCase p {
+  color: #A7BCC4;
+}
+
+[data-theme='dark'] .codeSection,
+[data-theme='dark'] .ecosystem {
+  background: linear-gradient(180deg, #232738 0%, #1a1d2e 100%);
+}
+
+[data-theme='dark'] .useCases {
+  background: #232738;
+}
+
+[data-theme='dark'] .useCase {
+  background: #1a1d2e;
+  border-color: rgba(167, 188, 196, 0.1);
+}
+
+[data-theme='dark'] .ecosystemItem {
+  background: #1a1d2e;
+  border-color: rgba(167, 188, 196, 0.1);
+}
+
+[data-theme='dark'] .ecosystemItem:hover {
+  border-color: #A7BCC4;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .ecosystemItem h4 {
+  color: #A7BCC4;
+}

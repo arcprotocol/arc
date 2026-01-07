@@ -1,0 +1,293 @@
+.terminalSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(180deg, 
+    #FAFBFC 0%, 
+    rgba(167, 188, 196, 0.05) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.terminalSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(17, 83, 97, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.terminalContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.terminalHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.terminalHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #383F5B 0%, #115361 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.terminalHeader p {
+  font-size: 1.125rem;
+  color: #5A6273;
+  font-weight: 400;
+}
+
+.terminalTabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(167, 188, 196, 0.2);
+  border-radius: 12px 12px 0 0;
+  color: #5A6273;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: #383F5B;
+  transform: translateY(-2px);
+}
+
+.activeTab {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #115361 !important;
+  border-bottom-color: transparent;
+  box-shadow: 0 4px 12px rgba(17, 83, 97, 0.1);
+}
+
+.terminalWindow {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border-radius: 16px;
+  border: 1px solid rgba(167, 188, 196, 0.2);
+  box-shadow: 
+    0 30px 90px rgba(56, 63, 91, 0.12),
+    0 12px 36px rgba(17, 83, 97, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.terminalWindow:hover {
+  box-shadow: 
+    0 40px 110px rgba(56, 63, 91, 0.16),
+    0 16px 44px rgba(17, 83, 97, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.terminalControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, 
+    rgba(56, 63, 91, 0.03) 0%, 
+    rgba(56, 63, 91, 0.05) 100%
+  );
+  border-bottom: 1px solid rgba(167, 188, 196, 0.1);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.terminalContent {
+  padding: 2rem;
+  min-height: 400px;
+  background: linear-gradient(135deg, 
+    rgba(56, 63, 91, 0.01) 0%, 
+    rgba(17, 83, 97, 0.02) 100%
+  );
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+.codeBlock {
+  position: relative;
+}
+
+.codeLine {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.125rem 0;
+  transition: background 0.2s;
+}
+
+.codeLine:hover {
+  background: rgba(17, 83, 97, 0.03);
+}
+
+.lineNumber {
+  color: #A7BCC4;
+  user-select: none;
+  font-weight: 500;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.keyword {
+  color: #115361;
+  font-weight: 600;
+}
+
+.string {
+  color: #2A7B3F;
+}
+
+.comment {
+  color: #A7BCC4;
+  font-style: italic;
+}
+
+.function {
+  color: #383F5B;
+  font-weight: 600;
+}
+
+.cursor {
+  display: inline-block;
+  background: #115361;
+  color: #FFFFFF;
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  line-height: 1.2;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.terminalFeatures {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.featureChip {
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(167, 188, 196, 0.2);
+  border-radius: 20px;
+  color: #383F5B;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(56, 63, 91, 0.06);
+}
+
+/* Dark mode */
+[data-theme='dark'] .terminalWindow {
+  background: rgba(56, 63, 91, 0.4);
+  border: 1px solid rgba(167, 188, 196, 0.1);
+}
+
+[data-theme='dark'] .terminalContent {
+  background: linear-gradient(135deg, 
+    rgba(0, 0, 0, 0.2) 0%, 
+    rgba(17, 83, 97, 0.1) 100%
+  );
+}
+
+[data-theme='dark'] .tab {
+  background: rgba(56, 63, 91, 0.3);
+  color: #A7BCC4;
+}
+
+[data-theme='dark'] .activeTab {
+  background: rgba(56, 63, 91, 0.6) !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme='dark'] .keyword {
+  color: #5BC4E3;
+}
+
+[data-theme='dark'] .string {
+  color: #68D391;
+}
+
+[data-theme='dark'] .function {
+  color: #A7BCC4;
+}
+
+[data-theme='dark'] .lineNumber {
+  color: #5A6273;
+}
+
+[data-theme='dark'] .featureChip {
+  background: rgba(56, 63, 91, 0.4);
+  color: #A7BCC4;
+}
+
+@media screen and (max-width: 768px) {
+  .terminalSection {
+    padding: 4rem 1rem;
+  }
+
+  .terminalHeader h2 {
+    font-size: 2rem;
+  }
+
+  .terminalContent {
+    padding: 1rem;
+    min-height: 300px;
+    font-size: 0.75rem;
+  }
+
+  .terminalTabs {
+    gap: 0.25rem;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .terminalFeatures {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
